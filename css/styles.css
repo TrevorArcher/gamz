@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+.demo-1 {
+  background-image: url("../images/coffee-cup-desk-pen.jpg");
+}
+.demo-2 {
+  background-image: url("../images/hands-coffee-smartphone-technology.jpg");
+}
+.demo-3 {
+  background-image: url("../images/people-woman-coffee-meeting.jpg");
+}
+.demo-4 {
+  background-image: url("../images/pexels-photo-57690.jpeg");
+}
+.demo-5 {
+  background-image: url("../images/pexels-photo.jpg");
+}
+
+.parallax {
+  height: 30vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+}
