@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.bg-images {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .demo-1 {
   background-image: url("../images/coffee-cup-desk-pen.jpg");
 }
@@ -19,15 +29,36 @@
 }
 
 .parallax {
-  height: 30vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax-group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-base {
+  transform: translateZ(0);
+}
+.parallax-back {
+  transform: translateZ(-1px) scale(2);
+  overflow: hidden;
 }
 
 .content {
-  width: 100%;
-  height: 40vh;
+  font-size: 200%;
+  color: #fff;
   text-align: center;
 }
