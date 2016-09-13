@@ -13,19 +13,24 @@ body {
 }
 
 .demo-1 {
-  background-image: url("../images/coffee-cup-desk-pen.jpg");
+  background-image: url("../images/parallax-1.png");
 }
 .demo-2 {
-  background-image: url("../images/hands-coffee-smartphone-technology.jpg");
+  background-image: url("../images/parallax-2.png");
 }
 .demo-3 {
-  background-image: url("../images/people-woman-coffee-meeting.jpg");
+  background-image: url("../images/parallax-3.png");
 }
 .demo-4 {
-  background-image: url("../images/pexels-photo-57690.jpeg");
+  background-image: url("../images/parallax-4.png");
 }
 .demo-5 {
-  background-image: url("../images/pexels-photo.jpg");
+  background-color: #91dcff;
+  background-image: url("../images/parallax-5.png");
+}
+.demo-6 {
+
+  background-image: url("../images/parallax-6.png");
 }
 
 .parallax {
@@ -49,11 +54,37 @@ body {
   left: 0;
 }
 
+.parallax-fore {
+  transform: translateZ(5px);
+}
+
 .parallax-base {
   transform: translateZ(0);
+  overflow: hidden;
 }
+
 .parallax-back {
   transform: translateZ(-1px) scale(2);
+  overflow: hidden;
+}
+
+.parallax-deep1 {
+  transform: translateZ(-2px) scale(3);
+  overflow: hidden;
+}
+
+.parallax-deep2 {
+  transform: translateZ(-3px) scale(4);
+  overflow: hidden;
+}
+
+.parallax-deep3 {
+  transform: translateZ(-4px) scale(5);
+  overflow: hidden;
+}
+
+.parallax-deep4 {
+  transform: translateZ(-5px) scale(6);
   overflow: hidden;
 }
 
@@ -61,4 +92,8 @@ body {
   font-size: 200%;
   color: #fff;
   text-align: center;
+}
+
+.content-1 {
+  background-color: #001905;
 }
